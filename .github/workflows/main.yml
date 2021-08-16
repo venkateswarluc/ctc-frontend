@@ -17,6 +17,12 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build-dev # will run `yarn build` command
+      - name: installing yarn
+        with:
+          cmd: |
+              npx create-react-app my-app
+              cd my-app
+              npm start
       - name: Upload Dev Build Artifacts
         uses: actions/upload-artifact@v2
         with:
