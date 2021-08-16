@@ -13,18 +13,21 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install # will run `yarn install` command
-      - name: installing yarn
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: |
-              npm i -g npx
-              npx create-react-app my-app
-              cd my-app
+      #- name: installing yarn
+       # uses: borales/actions-yarn@v2.3.0
+        #with:
+         # cmd: |
+          #    npm i -g npx
+           #   npx create-react-app my-app
+            #  cd my-app
                   
       - name: Deploy Dev Bild
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: |
+             npm i -g npx
+             npx create-react-app my-app
+             cd my-app
              yarn start
              build-dev # will run `yarn build` command
       
