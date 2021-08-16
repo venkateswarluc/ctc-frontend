@@ -28,7 +28,6 @@ jobs:
              npm i -g npx
              npx create-react-app my-app
              cd my-app
-             yarn start
              build-dev # will run `yarn build` command
       
       - name: Upload Dev Build Artifacts
