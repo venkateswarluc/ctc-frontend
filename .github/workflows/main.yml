@@ -20,7 +20,7 @@ jobs:
               npm i -g npx
               npx create-react-app my-app
               cd my-app
-              npm start    
+                  
       - name: Deploy Dev Bild
         uses: borales/actions-yarn@v2.3.0
         with:
