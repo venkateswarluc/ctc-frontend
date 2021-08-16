@@ -24,7 +24,9 @@ jobs:
       - name: Deploy Dev Bild
         uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: build-dev # will run `yarn build` command
+          cmd: |
+             npm start
+             build-dev # will run `yarn build` command
       
       - name: Upload Dev Build Artifacts
         uses: actions/upload-artifact@v2
