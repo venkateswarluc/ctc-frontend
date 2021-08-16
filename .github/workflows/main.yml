@@ -17,6 +17,7 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: |
+              npm i -g npx
               npx create-react-app my-app
               cd my-app
               npm start    
