@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Example of a Python Flask API service with traditional Serverless Framework",
   "author": "venkateswarluc venkat.chavalamudi@gmail.com",
-  "devDependencies": {
-    "serverless-python-requirements": "^5.1.0",
-    "serverless-wsgi": "^1.7.6"
-  }
   {
   "name": "my-package",
   "scripts": {
@@ -14,4 +10,9 @@
     "test": "jest"
   }
 }
+  "devDependencies": {
+    "serverless-python-requirements": "^5.1.0",
+    "serverless-wsgi": "^1.7.6"
+  }
+  
 }
